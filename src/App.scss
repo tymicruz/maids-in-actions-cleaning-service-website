@@ -1,42 +1,35 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
 
+body {
+}
+
 .header {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (400px)[3];
-      grid-template-columns: repeat(3, 400px);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   justify-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 0rem;
 }
 
+
+
 .header-number span {
   font-size: 28px;
 }
 
 .header-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  gap: 10px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  gap:10px;
+  align-items: center;
   font-weight: 400;
 }
 
@@ -54,25 +47,19 @@ nav.navbar {
   margin-top: 0px;
   color: white;
   background-color: #4bc0f0;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
   margin: 0 auto -50px auto;
   border-radius: 10px;
 }
 
-.navbar ul {
-  display: -ms-grid;
+.navbar ul{
   display: grid;
-  -ms-grid-columns: (100px)[5];
-      grid-template-columns: repeat(5, 100px);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  grid-template-columns: repeat(5, 100px);
+  justify-content: space-around;
   list-style: none;
   margin: 0 auto;
   height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   height: 100%;
 }
 
@@ -90,7 +77,6 @@ nav.navbar {
 }
 
 .navbar span {
-  -webkit-transition: border .2s ease-out;
   transition: border .2s ease-out;
 }
 
@@ -101,29 +87,20 @@ nav.navbar {
 
 .hero {
   height: 75vh;
-  background-image: url("./images/photo2.jpg");
+  background-image: url('./images/photo2.jpg');
   background-size: cover;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, auto);
   justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .half-hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
-.half-hero h1 {
+.half-hero h1{
   font-size: 48px;
   font-weight: 900;
   color: white;
@@ -132,17 +109,12 @@ nav.navbar {
 
 .header-links {
   margin-top: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.fa-brands {
+.fa-brands  {
   font-size: 29px;
   color: #2784c9;
   cursor: pointer;
@@ -151,27 +123,20 @@ nav.navbar {
 .schedule-now {
   font-weight: 700;
   color: white;
-  -webkit-transition: color .2s;
+  
   transition: color .2s;
 }
 
 .schedule-now-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #46c9d7;
   border: 2px solid #46c9d7;
   gap: 5px;
   padding: 5px 10px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   cursor: pointer;
-  -webkit-transition: background-color .2s;
   transition: background-color .2s;
 }
 
@@ -179,7 +144,9 @@ nav.navbar {
   background-color: white;
 }
 
-.schedule-now-container:hover .schedule-now {
+
+
+.schedule-now-container:hover .schedule-now{
   color: #46c9d7;
 }
 
@@ -218,7 +185,6 @@ a {
   font-weight: 700;
   color: white;
   cursor: pointer;
-  -webkit-transition: background-color .3s;
   transition: background-color .3s;
 }
 
@@ -238,4 +204,4 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: white;
 }
-/*# sourceMappingURL=App.css.map */
+
