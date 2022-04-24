@@ -6,6 +6,10 @@
   font-family: Roboto, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   display: -ms-grid;
   display: grid;
@@ -22,7 +26,6 @@
   justify-items: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 0rem;
 }
 
 .header-number span {
@@ -42,15 +45,27 @@
 
 .logo {
   height: 100px;
+  margin-left: 2.5rem;
 }
 
 .bestindestin-img {
   height: 100px;
 }
 
+.header-right {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.header-right i {
+  color: #ea4335;
+}
+
 nav.navbar {
   position: relative;
   width: 50%;
+  height: 4.1em;
   margin-top: 0px;
   color: white;
   background-color: #4bc0f0;
@@ -58,9 +73,10 @@ nav.navbar {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 0 auto -50px auto;
   border-radius: 10px;
+  border: 2px solid white;
 }
 
-.navbar ul {
+.navbar-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (100px)[5];
@@ -69,17 +85,25 @@ nav.navbar {
       justify-content: space-around;
   list-style: none;
   margin: 0 auto;
-  height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 100%;
 }
 
 .navbar li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 15px 10px;
   background-color: #4bc0f0;
-  font-weight: bolder;
+  font-weight: 900;
   text-align: center;
   border-radius: 0px;
   cursor: pointer;
@@ -94,13 +118,37 @@ nav.navbar {
   transition: border .2s ease-out;
 }
 
+.navbar i {
+  margin-left: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
 .navbar li:hover .nav-item {
   border-bottom: 2px solid white;
   border-radius: none;
 }
 
+.services-list-show li:hover .sub-nav-item {
+  border-bottom: 2px solid white;
+  border-radius: none;
+}
+
+.services-list-hide {
+  display: none;
+}
+
+.services-list-show {
+  position: absolute;
+  top: 3.85em;
+  left: 6em;
+  border-radius: 8px;
+  background-color: red;
+}
+
 .hero {
-  height: 75vh;
+  height: 85vh;
   background-image: url("./images/photo2.jpg");
   background-size: cover;
   display: -ms-grid;
@@ -113,7 +161,7 @@ nav.navbar {
           align-items: center;
 }
 
-.half-hero {
+.half-hero-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,13 +169,34 @@ nav.navbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-left: -20px;
 }
 
-.half-hero h1 {
-  font-size: 48px;
+.half-hero-1 h1 {
+  font-size: 3em;
   font-weight: 900;
   color: white;
   margin-bottom: 15px;
+}
+
+.hero-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin-top: 1rem;
+}
+
+.hero-list i {
+  margin-right: 10px;
 }
 
 .header-links {
@@ -237,5 +306,17 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: white;
+}
+
+.container {
+  height: 80vh;
+}
+
+.aboutus-container {
+  background-color: white;
+}
+
+.services-container {
+  color: blue;
 }
 /*# sourceMappingURL=App.css.map */

@@ -17,7 +17,6 @@ const Header = () => {
             <img className="logo" src={logo} />
             <div>
                 <div className="header-number">
-
                     <span>{number}</span>
                 </div>
                 <div className="header-links">
@@ -33,7 +32,10 @@ const Header = () => {
                     </a> */}
                 </div>
             </div>
-            <img className="bestindestin-img" src={bestInDestin} />
+            <div className="header-right">
+                <i className="fa-solid fa-location-dot"></i> Fort Walton Beach, FL
+            </div>
+            {/* <img className="bestindestin-img" src={bestInDestin} /> */}
         </header >
     )
 }
