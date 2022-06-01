@@ -1,9 +1,9 @@
 After taking a course on React and The Odin Project foundation for basic styling, I decided to try rebuilding my [aunt's cleaning service website](https://maidsinactioncs.com/) with React.
 
-After:
+### After:
 <img width="1437" alt="Screen Shot 2022-06-01 at 12 37 40 PM" src="https://user-images.githubusercontent.com/11262739/171456934-711beb5b-c0b8-4893-86ab-9dc3f084fd1b.png">
 
-Before:
+### Before:
 <img width="1433" alt="Screen Shot 2022-06-01 at 12 40 26 PM" src="https://user-images.githubusercontent.com/11262739/171457559-053c1381-c2f1-40ee-a189-dcc22a602207.png">
 
 
